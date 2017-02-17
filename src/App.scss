@@ -1,0 +1,93 @@
+.App {
+  margin: 0;
+  font-family: "Proxima Nova","proxima-nova",'Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #2e261d;
+}
+
+a {
+  background-color: transparent;
+  color: #2e261d;
+  &.back {
+    font-size: 14px;
+    border: 2px solid #ddd;
+    padding: 14px 24px;
+    margin-top: .5rem;
+    display: inline-block;
+    text-decoration: none;
+    color: #999;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: .2s ease all;
+  }
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+h2 {
+  color: #393836;
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+section {
+  display: block;
+  hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+section {
+  strong {
+    display: block;
+  }
+  .amount {
+    float: right;
+  }
+  .item {
+    padding-right: 18px 25px;
+  }
+}
+
+.row {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  .column {
+    float: left;
+    width: 100%;
+    padding: 0 60px;
+    margin-bottom: 70px;
+    &.half {
+      width: 50%;
+      position: relative;
+    }
+    &:first-child {
+      left: 50%;
+    }
+    &:last-child {
+      left: -50%;
+    }
+  }
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
