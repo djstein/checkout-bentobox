@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import axios from 'axios';
 import Header from './components/Header/Header';
 import OrderSummary from './components/OrderSummary/OrderSummary';
-import Billing from './components/Billing/Billing';
+import BillingForm from './components/BillingForm/BillingForm';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
@@ -36,7 +36,7 @@ class App extends Component {
               <OrderSummary cart={this.state.data.store.cart} />
             </div>
             <div className="column half">
-              <Billing />
+              <BillingForm cart={this.state.data.store.cart}/>
             </div>
           </div>
         <Footer url={this.state.data.account.site.url} domain={this.state.data.account.site.domain}/>

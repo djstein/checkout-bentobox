@@ -14,6 +14,7 @@ class Payment extends Component {
   render() {
     return (
       <div className="Payment">
+        <h2>Payment Information</h2>
         <fieldset>
           <input id="name" placeholder="Name on Card" type="text" />
         </fieldset>
