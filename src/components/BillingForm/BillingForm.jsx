@@ -47,6 +47,7 @@ class BillingForm extends Component {
     for(var key in this.state){
       if(this.state.hasOwnProperty(key)){
         console.log(this.state[key]);
+        
       }
     }
     return true;

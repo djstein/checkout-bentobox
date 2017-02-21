@@ -18,6 +18,7 @@ class Payment extends Component {
     return (
       <div className="Payment">
         <h2>Payment Information</h2>
+        <div class="error" id="payment-error"></div>
         <fieldset>
           <input onChange={this.handleInputChange} name="cc_name" placeholder="Name on Card" type="text" />
           <input onChange={this.handleInputChange} name="cc_number" placeholder="Card Number" type="text" />
